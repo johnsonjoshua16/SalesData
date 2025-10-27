@@ -1,0 +1,43 @@
+import pandas as pd
+
+def load_sales_data():
+    """
+    Load or create the sales dataset.
+
+    Returns:
+        pd.DataFrame: DataFrame containing sales data.
+    """
+    data = {
+        "Date": [
+            "2025-01-01", "2025-01-02", "2025-01-03", "2025-01-04",
+            "2025-01-05", "2025-01-06", "2025-01-07", "2025-01-08"
+        ],
+        "Product": ["Laptop", "Phone", "Tablet", "Monitor", "Laptop", "Phone", "Tablet", "Monitor"],
+        "Units_Sold": [10, 25, 15, 12, 8, 20, 18, 14],
+        "Price_per_Unit": [900, 600, 400, 300, 950, 620, 390, 310],
+        "Region": ["North", "South", "East", "West", "North", "South", "East", "West"]
+    }
+    return pd.DataFrame(data)
+
+def analyze_sales(df: pd.DataFrame):
+    """
+    Perform basic descriptive analysis on sales data.
+
+    Args:
+        df (pd.DataFrame): The sales dataset.
+
+    Returns:
+        pd.DataFrame: Summary statistics of numeric columns.
+    """
+    print("\n📊 Sales Data:")
+    print(df)
+    
+    print("\n📈 Descriptive Statistics:")
+    summary = df.describe()
+    print(summary)
+    
+    return summary
+
+if __name__ == "__main__":
+    df = load_sales_data()
+    analyze_sales(df)

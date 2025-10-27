@@ -56,7 +56,7 @@ Joshua Johnson — Data Science Trainee & Python Developer
 
 
 ## Contact
-Joshua Johnson (@johnsonjoshua16)
-Data Science Trainee and Python Developer.
-London, UK.
+Joshua Johnson (@johnsonjoshua16) <br>
+Data Science Trainee and Python Developer. <br>
+London, UK. <br>
 Feel free to open an issue or submit a PR if you'd like to contribute or suggest improvements!

@@ -17,3 +17,30 @@ This project demonstrates:
 Install dependencies with:
 ```bash
 pip install -r requirements.txt
+```
+
+## ▶️ Usage
+Run the script:
+```bash
+python src/analyze_sales.py
+```
+Output includes:
+- The sales dataset table
+- Statistical summary (mean, std, min, max, etc.)
+
+## 📈 Example Output
+```yaml
+📊 Sales Data:
+         Date Product  Units_Sold  Price_per_Unit Region
+0  2025-01-01  Laptop          10             900  North
+1  2025-01-02   Phone          25             600  South
+...
+
+📈 Descriptive Statistics:
+       Units_Sold  Price_per_Unit
+count     8.00000        8.000000
+mean     15.25000      558.750000
+std       5.59362      240.553108
+min       8.00000      300.000000
+max      25.00000      950.000000
+```

@@ -44,3 +44,12 @@ std       5.59362      240.553108
 min       8.00000      300.000000
 max      25.00000      950.000000
 ```
+
+## 🧩 Future Improvements
+
+- Add regional performance breakdowns
+- Export reports as Excel or PDF
+- Build an interactive dashboard with Plotly or Streamlit
+
+## 🧑‍💻 Author
+Joshua Johnson — Data Science Trainee & Python Developer

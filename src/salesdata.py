@@ -79,8 +79,7 @@ data = {
         13950.0,9225.0,5156.0,9120.0,14062.5,6813.0,5381.0,11988.0,10350.0,6460.0
     ]
 }
-
-# Compute Revenue and Profit
+    # Compute Revenue and Profit
 df = pd.DataFrame(data)
 df["Revenue"] = df["Units_Sold"] * df["Price_per_Unit"]
 df["Profit"] = df["Revenue"] * (1 - df["Discount"]/100)
@@ -91,6 +90,25 @@ print(f"Total rows: {len(df)}")
 df = pd.DataFrame(data)
 print(df)
 
-print(df.describe())
+def analyze_sales(df: pd.DataFrame):
+    """
+    Perform basic descriptive analysis on sales data.
+
+    Args:
+        df (pd.DataFrame): The sales dataset.
+
+    Returns:
+        pd.DataFrame: Summary statistics of numeric columns.
+    """
+    print("\n📊 Sales Data:")
+    print(df)
+    
+    print("\n📈 Descriptive Statistics:")
+    summary = df.describe()
+    print(summary)
+    
+    return summary
+
+analyze_sales(df)
 
 

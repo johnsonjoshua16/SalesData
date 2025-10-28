@@ -4,7 +4,7 @@
 [![Status: In Development](https://img.shields.io/badge/status-in--development-orange.svg)]()
 
 <p align="center">
-- A simple Python project that uses **Pandas** to analyze sales performance over a given time period. -
+- A simple Python project that uses <b>Pandas</b> to analyze sales performance over a given time period. -
 </p>
 
 ## 📂 Project Overview

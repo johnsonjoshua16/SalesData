@@ -31,18 +31,36 @@ Output includes:
 ## 📈 Example Output
 ```yaml
 📊 Sales Data:
-         Date Product  Units_Sold  Price_per_Unit Region
-0  2025-01-01  Laptop          10             900  North
-1  2025-01-02   Phone          25             600  South
-...
+# Example Output (Sales Data)
 
-📈 Descriptive Statistics:
-       Units_Sold  Price_per_Unit
-count     8.00000        8.000000
-mean     15.25000      558.750000
-std       5.59362      240.553108
-min       8.00000      300.000000
-max      25.00000      950.000000
+SalesData:
+  - Date: "2025-01-01"
+    Product: "Laptop"
+    Units_Sold: 12
+    Revenue: 11400
+    Profit: 10830.0
+
+  - Date: "2025-01-02"
+    Product: "Phone"
+    Units_Sold: 28
+    Revenue: 17360
+    Profit: 15624.0
+
+  - Date: "2025-01-03"
+    Product: "Tablet"
+    Units_Sold: 15
+    Revenue: 6000
+    Profit: 6000.0
+
+-----------------------------------------
+
+Summary:
+  Total_Sales: 500000
+  Average_Profit: 10325.4
+  Best_Selling_Product: "Phone"
+  Top_Region: "South"
+
+
 ```
 
 ## 🧩 Future Improvements

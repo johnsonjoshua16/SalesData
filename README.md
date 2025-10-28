@@ -1,5 +1,8 @@
 ## 🛒 Sales Data Analysis
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![Status: In Development](https://img.shields.io/badge/status-in--development-orange.svg)]()
+
 A simple Python project that uses **Pandas** to analyze sales performance over a given time period.
 
 ## 📂 Project Overview

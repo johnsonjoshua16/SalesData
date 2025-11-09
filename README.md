@@ -1,6 +1,4 @@
-## 💻 Quantyze 
-SalesData is used as the example.
-
+## 💻 SalesData
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)  
 [![Status: In Development](https://img.shields.io/badge/Status-in--Development-orange.svg)]()
 

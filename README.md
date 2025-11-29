@@ -1,21 +1,20 @@
-## 🛒 Sales Data 
-
+## 💻 SalesData
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)  
 [![Status: In Development](https://img.shields.io/badge/Status-in--Development-orange.svg)]()
 
 <p align="center">
-- A simple Python project that uses <b>Pandas</b> to analyze sales performance over a given time period. -
+- A simple Python project that uses <b>Pandas</b> to analyze performance over a given time period. -
 </p>
 
 ## 📂 Project Overview
 
 This project demonstrates:
 - How to create and load a dataset with Pandas
-- How to compute descriptive statistics for sales data
+- How to compute descriptive statistics for data
 - How to structure small data analysis scripts for GitHub
 
 ## 🚀 Features
-- Load sales data from a dictionary or CSV file
+- Load data from a dictionary or CSV file
 - Display tabular data
 - Generate summary statistics with `pandas.DataFrame.describe()`
 

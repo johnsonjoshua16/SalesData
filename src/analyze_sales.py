@@ -4,7 +4,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from data.sales_data import data
+from data.data import data
 
 def load_sales_data():
     """

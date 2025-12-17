@@ -3,6 +3,8 @@ import os
 sys.path.append(os.path.dirname(__file__) + "/..")
 import pandas as pd
 from data.data import data
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Compute Revenue and Profit
 df = pd.DataFrame(data)
@@ -29,4 +31,9 @@ print(f"  Average_Profit: {df['Profit'].mean():.1f}")
 print(f"  Best_Selling_Product: \"{df.groupby('Product')['Units_Sold'].sum().idxmax()}\"")
 print(f"  Top_Region: \"{df.groupby('Region')['Revenue'].sum().idxmax()}\"")
 
-
+sns.lineplot(data=df, x="Date", y="Revenue", hue="Product")
+plt.title("Revenue Over Time by Product")
+plt.xlabel("Date")
+plt.ylabel("Revenue")
+plt.legend(title="Product")
+plt.show()

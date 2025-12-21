@@ -34,55 +34,10 @@ Output includes:
 - Statistical summary (mean, std, min, max, etc.)
 
 ## 📈 Example Output
-```yaml
-📊 Sales Data:
-# Example Output (Sales Data)
 
-📈 Descriptive Statistics:
-       Units_Sold  Price_per_Unit   Discount       Revenue        Profit
-count   50.000000       50.000000  50.000000     50.000000     50.000000
-mean    17.520000      581.100000   6.400000   9821.500000   9070.389000
-std      5.511546      249.027271   2.784798   4828.518306   4351.878368
-min     10.000000      300.000000   0.000000   3950.000000   3550.000000
-25%     13.250000      391.250000   5.000000   6022.500000   5835.750000
-50%     15.500000      605.000000   6.000000   9525.000000   8953.500000
-75%     22.750000      865.000000   8.000000  13155.000000  11787.750000
-max     28.000000      970.000000  12.000000  26640.000000  23976.000000
-
---------------------------------AND/OR----------------------------------
-
-📊 Sales Data:
-# Example Output (Sales Data)
-
-SalesData:
-  - Date: "2025-01-01"
-    Product: "Laptop"
-    Units_Sold: 12
-    Revenue: 11400
-    Profit: 10830.0
-
-  - Date: "2025-01-02"
-    Product: "Phone"
-    Units_Sold: 28
-    Revenue: 17360
-    Profit: 15624.0
-
-  - Date: "2025-01-03"
-    Product: "Tablet"
-    Units_Sold: 15
-    Revenue: 6000
-    Profit: 6000.0
-
------------------------------------------
-
-Summary:
-  Total_Sales: 500000
-  Average_Profit: 10325.4
-  Best_Selling_Product: "Phone"
-  Top_Region: "South"
+![Sales Chart](images/chart.png)
 
 
-```
 
 ## 🧩 Future Improvements
 

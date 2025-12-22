@@ -1,9 +1,10 @@
-## 💻 SalesData
+![L](images/logo.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)  
 [![Status: In Development](https://img.shields.io/badge/Status-in--Development-orange.svg)]()
 
 <p align="center">
-- A simple Python project that uses <b>Pandas</b> to analyze performance over a given time period. -
+- A Python project that uses <b>Pandas</b> to analyze performance over a given time period. -
 </p>
 
 ## 📂 Project Overview

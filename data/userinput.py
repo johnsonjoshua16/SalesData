@@ -1,5 +1,13 @@
 # Import pandas library for data manipulation and analysis
 import pandas as pd
+import sys
+import os
+
+# Append the parent directory to the system path to allow importing modules from there
+sys.path.append(os.path.dirname(__file__) + "/..")
+
+# Import the parsedata function from salesdata module
+from src.salesdata import parsedata
 
 # Prompt the user to enter the file path and remove any surrounding quotes
 path = input("Enter file path: ").strip('"')
@@ -10,20 +18,20 @@ try:
     with open(path, "r", errors="ignore") as f:
         # Read all lines, strip whitespace, and filter out empty lines
         lines = [line.strip() for line in f if line.strip()]
-    
+
     # Check if there are any valid lines; if not, print error and exit
     if not lines:
         print("Error: The file is empty or contains no valid lines.")
         exit(1)
-    
+
     # Split each line into a list of values using any whitespace as delimiter
     rows = [line.split() for line in lines]   # split on ANY whitespace
-    
+
     # Check if there are any rows after splitting; if not, print error and exit
     if not rows:
         print("Error: No data rows found after splitting.")
         exit(1)
-    
+
     # Extract the first row as column headers
     columns = rows[0]
     # Initialize a dictionary with column names as keys and empty lists as values
@@ -37,13 +45,10 @@ try:
         # Append each value to the corresponding column list
         for col, value in zip(columns, row):
             data[col].append(value)
-    
-    # Convert the dictionary to a pandas DataFrame for further processing
-    df = pd.DataFrame(data)
-    # Print success message and display the first few rows of the DataFrame
-    print("Data loaded successfully:")
-    print(df.head())
-    
+
+    # Call the parsedata function with the loaded data to process and display it
+    parsedata(data)
+
 # Handle the case where the file is not found
 except FileNotFoundError:
     print(f"Error: File '{path}' not found.")

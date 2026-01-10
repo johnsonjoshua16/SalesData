@@ -1,0 +1,3 @@
+- [x] Fix user input path loading issue in salesdata.py
+- [x] Ensure parsedata function is called with loaded data when user provides a path
+- [x] Test the fix to confirm graph and data load correctly for user input

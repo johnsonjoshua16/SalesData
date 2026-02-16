@@ -36,6 +36,7 @@ def parsedata(data):
         print(f"    Revenue: {int(row['Revenue'])}")
         # Print the profit for the current row
         print(f"    Profit: {row['Profit']}")
+        
 
     # Print a separator line
     print("\n-----------------------------------------")

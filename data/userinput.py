@@ -1,4 +1,3 @@
-# Import pandas library for data manipulation and analysis
 import pandas as pd
 import sys
 import os
@@ -6,26 +5,22 @@ import os
 # Append the parent directory to the system path to allow importing modules from there
 sys.path.append(os.path.dirname(__file__) + "/..")
 
-# Import the parsedata function from salesdata module
+
 from src.salesdata import parsedata
 
-# Prompt the user to enter the file path and remove any surrounding quotes
-path = input("Enter file path: ").strip('"')
+path = input("Enter file path: ").strip('"') #remove any surrounding quotes
 
-# Try to open and process the file
 try:
-    # Open the file in read mode, ignoring encoding errors
+    #read mode, ignoring encoding errors
     with open(path, "r", errors="ignore") as f:
         # Read all lines, strip whitespace, and filter out empty lines
         lines = [line.strip() for line in f if line.strip()]
 
-    # Check if there are any valid lines; if not, print error and exit
     if not lines:
         print("Error: The file is empty or contains no valid lines.")
         exit(1)
 
-    # Split each line into a list of values using any whitespace as delimiter
-    rows = [line.split() for line in lines]   # split on ANY whitespace
+    rows = [line.split() for line in lines]   # split on *any* whitespace
 
     # Check if there are any rows after splitting; if not, print error and exit
     if not rows:
@@ -38,7 +33,6 @@ try:
     data = {col: [] for col in columns}
     # Iterate over the remaining rows (data rows)
     for row in rows[1:]:
-        # Check if the row has the same number of values as columns
         if len(row) != len(columns):
             print(f"Error: Row has {len(row)} values but expected {len(columns)}. Skipping row: {row}")
             continue

@@ -75,18 +75,18 @@ def pdata(data):
     
     # Iterate over each row in the DataFrame
     for index, row in df.iterrows():
-        # Print the date for the current row
+        #Print the date for the current row
         print(f"  - Date: \"{row['Date']}\"")
-        # Print the product for the current row
+        #Print the product for the current row
         print(f"    Product: \"{row['Product']}\"")
-        # Print the units sold for the current row
+        #Print the units sold for the current row
         print(f"    Units_Sold: {row['Units_Sold']}")
-        # Print the revenue for the current row, converted to integer
+        #Print the revenue for the current row, converted to integer
         print(f"    Revenue: {int(row['Revenue'])}")
-        # Print the profit for the current row
+        #Print the profit for the current row
         print(f"    Profit: {row['Profit']}")
 
-    # Print a separator line
+    #Print a separator line
     print("\n-----------------------------------------")
     print("\nSummary:")
     print(f"  Total_Sales: {int(df['Revenue'].sum())}")

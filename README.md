@@ -47,7 +47,7 @@ Output includes:
 - Build an interactive dashboard with Plotly or Streamlit
 
 ## 🧑‍💻 Author
-Joshua Johnson — Machine Learning Trainee & Python Developer
+Joshua Johnson — Data Science trainee & Python Developer
 
 
 ## Contact

@@ -1,18 +1,15 @@
-# Import sys module to access system-specific parameters and functions
 import sys
-# Import os module to interact with the operating system
 import os
 # Append the parent directory to the system path to allow importing modules from there
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 # Import pandas for data manipulation and analysis
 import pandas as pd
-# Import matplotlib.pyplot for creating static, animated, and interactive visualizations
+
 import matplotlib.pyplot as plt
-# Import the data from the data module
 from data.data import data
 
-# Define a function to load or create the sales dataset
+
 def load_sales_data():
     """
     Load or create the sales dataset.
@@ -20,7 +17,7 @@ def load_sales_data():
     Returns:
         pd.DataFrame: DataFrame containing sales data.
     """
-    # Create and return a DataFrame from the imported data
+   
     return pd.DataFrame(data)
 
 # Define a function to perform basic descriptive analysis on sales data
